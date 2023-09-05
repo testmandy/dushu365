@@ -1,0 +1,21 @@
+
+
+base_url: 'https://gw1.dushu365.com'
+
+
+# 书籍列表
+fd_book_list1: '/resource-orchestration-system/books/bookInfoByCategory'
+fd_book_list2: '/sns-orchestration-system/speaker/v100/opusList'
+ff_book_list: '/athena-orchestration-system/app/book/v102/list'
+ll_book_list: '/lilei-talk-orch/main/v100/listpage'
+ll_book_list2: '/lilei-talk-orch/main/v100/list'
+
+#付费
+buy_records: '/smart-orch/album/v103/buyRecords'
+course_info: '/smart-orch/program/v100/info'
+course_list: '/smart-orch/program/v100/list'
+
+# 书籍详情
+fd_book_detail: '/resource-orchestration-system/book/v101/content/part'
+ff_book_detail: '/smart-orch/program/v100/info'
+ll_book_detail: '/resource-orchestration-system/book/v101/content/part'
