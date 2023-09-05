@@ -11,7 +11,7 @@ from common.method import Request
 req = Request()
 URL = TestUrl()
 headers = {'Content-Type': 'application/json; charset=utf-8'}
-token = "20230718WToh4AwsjajTxrVyIPC"
+token = "20230905B7luzZCz7b0WdfooiGn"
 
 
 def get_token():
@@ -217,7 +217,7 @@ def get_course_list(courseId, pageSize):
 
 
 def get_course_info(courseId):
-    program_id_list = get_course_list(courseId, pageSize=500)
+    program_id_list = get_course_list(courseId, pageSize=300)
     print(program_id_list)
     course_info_list = []
     for programId in program_id_list:
@@ -276,8 +276,6 @@ def get_buy_records(pageNo, sheet_name, filename):
     print(result_list)
     write_course(result_list[0], sheet_name, filename)
     # return result_list
-
-    #
     # albumId = res['data']['albumId']
     # programId = res['data']['programId']
     # categoryName = res['data']['categoryName']
@@ -285,23 +283,23 @@ def get_buy_records(pageNo, sheet_name, filename):
 
 
 if __name__ == '__main__':
-    # get_ff_book_list(10)
+    # get_ff_book_list(20)
     get_fd_book_list(20)
     # get_ll_book_list(20)
     # get_course_list(400002103)
     # get_course_info(400002103)
     # get_book_info(400069651)
-    # get_buy_records(1, "樊登精品课程", '/course_data1.xls')
-    # get_buy_records(2, "李蕾", '/course_data2.xls')
-    # get_buy_records(3, "面试", '/course_data3.xls')
-    # get_buy_records(4, "罗家德", '/course_data4.xls')
-    # get_buy_records(5, "曾仕强-易经", '/course_data5.xls')
-    # get_buy_records(6, "韩鹏杰", '/course_data6.xls')
-    # get_buy_records(7, "王峰", '/course_data7.xls')
-    get_buy_records(8, "论语", '/course_data8.xls')
-    # get_buy_records(9, "新父母", '/course_data9.xls')
-    # get_buy_records(10, "李欣", '/course_data10.xls')
-    # get_buy_records(11, "姜鹏", '/course_data11.xls')
-    # get_buy_records(12, "曾仕强-易经", '/course_data12.xls')
-    get_buy_records(13, "樊登读孟子", '/course_data13.xls')
+    # get_buy_records(1, "樊登读孟子", '/course_data13.xls')
+    # get_buy_records(2, "樊登讲大学", '/course_data1.xls')
+    # get_buy_records(3, "李蕾", '/course_data2.xls')
+    # get_buy_records(4, "面试", '/course_data3.xls')
+    # get_buy_records(5, "罗家德", '/course_data4.xls')
+    # get_buy_records(6, "曾仕强-易经", '/course_data5.xls')
+    # get_buy_records(7, "韩鹏杰", '/course_data6.xls')
+    # get_buy_records(8, "王峰", '/course_data7.xls')
+    # get_buy_records(9, "论语", '/course_data8.xls')
+    # get_buy_records(10, "新父母", '/course_data9.xls')
+    # get_buy_records(11, "李欣", '/course_data10.xls')
+    # get_buy_records(12, "姜鹏", '/course_data11.xls')
+    # get_buy_records(13, "曾仕强-易经", '/course_data12.xls')
 
